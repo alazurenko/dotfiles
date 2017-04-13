@@ -15,7 +15,15 @@
     rv              = remote --verbose
     undo-commit     = reset --soft HEAD^
 
+[core]
+    pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 
+[color]
+    ui = always
 
-
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 2
 
