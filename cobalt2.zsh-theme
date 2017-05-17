@@ -74,7 +74,7 @@ prompt_context() {
   local node_version=`node -v`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)ᛟ ᛏ ᚱ ᛉ - node: ${node_version}"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)ᚱ ${node_version}"
   fi
 }
 
@@ -111,7 +111,7 @@ prompt_status() {
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
 
-  [[ -n "$symbols" ]] && prompt_segment black default "$symbols" 
+  [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
 
 ## Main prompt
