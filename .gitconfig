@@ -1,29 +1,30 @@
 [user]
-    name  = Andrii Lazurenko
-    email = andrey.lazurenko@gmail.com
+  name            = Andrii Lazurenko
+  email           = andrey.lazurenko@gmail.com
 
 [alias]
-    s               = status
-    d               = diff
-    cm              = commit
-    co              = checkout
-    br              = branch
-    unstage         = reset HEAD
-    last            = log -1 HEAD
-    lg              = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
-    rv              = remote --verbose
-    undo-commit     = reset --soft HEAD^
+  s               = status
+  cm              = commit
+  co              = checkout
+  br              = branch
+  unstage         = reset HEAD
+  last            = log -1 HEAD
+  lg              = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  tree            = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%an%d%Creset %s %Cgreen(%cr)%Creset' --date=relative
+  graph           = log --graph --all --decorate --stat --date=iso
+  rv              = remote --verbose
+  undo-commit     = reset --soft HEAD^
+  d               = diff
 
 [core]
-    pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  excludesfile    = /Users/Andrey/.gitignore_global
+  pager           = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 
 [color]
-    ui = always
+  ui 	          = always
 
 [color "diff-highlight"]
-    oldNormal = red bold
-    oldHighlight = red bold 52
-    newNormal = green bold
-    newHighlight = green bold 2
-
+  oldNormal       = red bold
+  oldHighlight    = red bold 52
+  newNormal       = green bold
+  newHighlight    = green bold 22
