@@ -1,2 +1,10 @@
 *~
+# os
 .DS_Store
+
+# tools
+.vscode
+.idea/
+
+# npm
+npm-debug.log
