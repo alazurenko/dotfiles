@@ -1,16 +1,21 @@
 {
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Sublime Material Theme - Dark",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
-    "files.trimTrailingWhitespace": true,
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.rulers": [
-      80
-    ],
-    "editor.wordWrap": "on",
-    "editor.renderIndentGuides": true,
-    "editor.renderLineHighlight": "all",
-    "editor.lineNumbers": "relative"
-  }
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+  "files.trimTrailingWhitespace": true,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.rulers": [
+    80
+  ],
+  "editor.wordWrap": "on",
+  "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "all",
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "all",
+  "workbench.colorTheme": "Cobalt2",
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "tslint.alwaysShowStatus": true,
+  "tslint.autoFixOnSave": true,
+  "tslint.configFile": "./tools/config/tslint.json"
+}
