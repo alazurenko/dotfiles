@@ -1,23 +1,36 @@
 {
   "window.zoomLevel": 0,
-  "workbench.iconTheme": "vscode-icons",
-  "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "files.trimTrailingWhitespace": true,
+  "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "400",
   "editor.fontSize": 14,
   "editor.tabSize": 2,
-  "editor.letterSpacing": 0.5,
   "editor.rulers": [80],
+  "editor.wordWrap": "off",
+  "editor.letterSpacing": 0.5,
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "all",
-  "editor.autoIndent": true,
-  "editor.wordWrap": "off",
   "editor.cursorBlinking": "solid",
-  "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Cobalt2",
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   "tslint.alwaysShowStatus": true,
   "tslint.autoFixOnSave": true,
-  "tslint.configFile": "./tools/config/tslint.json"
+  "workbench.sideBar.location": "right",
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
