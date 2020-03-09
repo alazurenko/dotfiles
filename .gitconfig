@@ -17,11 +17,11 @@
   d               = diff
 
 [core]
-  excludesfile    = /Users/Andrey/.gitignore_global
   pager           = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  editor          = code
 
 [color]
-  ui 	          = always
+  ui 	            = always
 
 [color "diff-highlight"]
   oldNormal       = red bold
