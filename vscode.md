@@ -8,13 +8,15 @@
 
 [Theme: Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
 
+[Theme: Pale Night](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
+
 [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
 [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-[glean](https://marketplace.visualstudio.com/items?itemName=wix.glean)
+[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
 [MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
 
@@ -29,3 +31,5 @@
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 [GraphQL for VSCode](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
+
+[SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
