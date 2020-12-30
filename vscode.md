@@ -2,36 +2,36 @@
 
 ## Extensions
 
-- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+[Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 
-- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
-- [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+[Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
-- [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+[EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
-- [MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
+[MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
 
-- [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
+[Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-- [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+[TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 
-- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+[Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
-- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+[vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
-- [GraphQL for VSCode](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
+[GraphQL for VSCode](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
 
-- [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+[SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
 
 ## Themes
 
-- [Theme: Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
+[Theme: Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
 
-- [Theme: Pale Night](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
+[Theme: Pale Night](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
