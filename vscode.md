@@ -6,25 +6,25 @@
 
 [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
-[Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-
 [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 
-[MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
-
 [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
 
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-[Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+[Vim emulator](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
-[SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss)
+[Code spell checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+
+[Multiple cursor case preserve](https://marketplace.visualstudio.com/items?itemName=Cardinal90.multi-cursor-case-preserve)
+
+[Pretty TypeScript errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors)
 
 ## Themes
 

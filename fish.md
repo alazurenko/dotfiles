@@ -1,15 +1,19 @@
 # Fish
 
-[Fish Shell](https://fishshell.com/)
+[fishshell](https://fishshell.com/)
 
-[oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
+[oh-my-fish: fish shell framework](https://github.com/oh-my-fish/oh-my-fish)
 
-[Fisher](https://github.com/jorgebucaran/fisher)
+[fisher: a plugin manager for Fish](https://github.com/jorgebucaran/fisher)
 
-[git](https://github.com/jhillyerd/plugin-git)
+[tide: fish prompt](https://github.com/IlanCosman/tide)
 
-[z](https://github.com/jethrokuan/z)
+[git: fish shell package for git shortcuts](https://github.com/jhillyerd/plugin-git)
 
-[done](https://github.com/franciscolourenco/done)
+[z: a fish shell package to jump around directories](https://github.com/jethrokuan/z)
 
-[nvm](https://github.com/FabioAntunes/fish-nvm)
+[done: a fish shell package to automatically receive notifications when long processes finish](https://github.com/franciscolourenco/done)
+
+[nvm: a fish shell wrapper over nvm](https://github.com/FabioAntunes/fish-nvm)
+
+[exa: exa aliases for fish](https://github.com/gazorby/fish-exa)

@@ -1,57 +1,64 @@
 {
   "files.trimTrailingWhitespace": true,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontWeight": "400",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    "editor.tabSize": 2,
-    "editor.rulers": [80],
-    "editor.wordWrap": "off",
-    "editor.letterSpacing": 0.5,
-    "editor.renderIndentGuides": true,
-    "editor.renderLineHighlight": "all",
-    "editor.lineNumbers": "relative",
-    "editor.renderWhitespace": "all",
-    "editor.cursorBlinking": "solid",
-    "workbench.colorTheme": "Palenight Operator",
-    "workbench.sideBar.location": "right",
-    "explorer.confirmDelete": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "breadcrumbs.enabled": true,
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "vim.camelCaseMotion.enable": true,
-    "workbench.iconTheme": "vscode-icons",
-    "editor.inlineSuggest.enabled": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "github.copilot.enable": {
-      "*": false,
-      "yaml": false,
-      "plaintext": false,
-      "markdown": false
-    },
-    "typescript.preferences.quoteStyle": "single",
-    "javascript.preferences.quoteStyle": "single"
-  }
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "editor.wordWrap": "off",
+  "editor.letterSpacing": 0.5,
+  "editor.renderLineHighlight": "all",
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "all",
+  "editor.cursorBlinking": "solid",
+  "workbench.colorTheme": "Palenight Theme",
+  "workbench.sideBar.location": "right",
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.camelCaseMotion.enable": true,
+  "editor.inlineSuggest.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false,
+    "typescript": true,
+    "typescriptreact": true
+  },
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "editor.suggest.showStatusBar": true,
+  "editor.guides.indentation": true,
+  "editor.stickyScroll.enabled": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "terminal.integrated.env.osx": {}
+}
