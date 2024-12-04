@@ -16,7 +16,7 @@
 
 [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-[Vim emulator](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+[Vim Emulator](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 

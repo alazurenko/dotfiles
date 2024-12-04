@@ -10,7 +10,7 @@
 
 [git: fish shell package for git shortcuts](https://github.com/jhillyerd/plugin-git)
 
-[z: a fish shell package to jump around directories](https://github.com/jethrokuan/z)
+<!-- [z: a fish shell package to jump around directories](https://github.com/jethrokuan/z) -->
 
 [done: a fish shell package to automatically receive notifications when long processes finish](https://github.com/franciscolourenco/done)
 
