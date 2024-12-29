@@ -28,6 +28,4 @@
 
 ## Themes
 
-[Theme: Cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2)
-
 [Theme: Pale Night](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)

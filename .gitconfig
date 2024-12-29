@@ -15,4 +15,4 @@
   rv              = remote --verbose
   undo-commit     = reset --soft HEAD^
   d               = diff
-
+  dw              = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
