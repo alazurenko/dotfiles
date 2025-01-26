@@ -1,0 +1,34 @@
+(defcfg
+  input  (device-file "/dev/input/by-id/usb-Apple_Inc._Apple_Internal_Keyboard___Trackpad-event-kbd")
+  output (uinput-sink "My KMonad output")
+
+  ;; This option tells KMonad to let non-configured keys act normal
+  fallthrough true
+)
+
+
+(defsrc
+    a    s    d    f    g    h    j    k    l    ;
+)
+
+(defalias
+    ctl_a (tap-hold-next-release 200 a lctl)
+    alt_s (tap-hold-next-release 200 s lalt)
+    sft_d (tap-hold-next-release 200 d lsft)
+    met_f (tap-hold-next-release 200 f lmet)
+
+    met_j (tap-hold-next-release 200 j rmet)
+    sft_k (tap-hold-next-release 200 k rsft)
+    alt_l (tap-hold-next-release 200 l lalt)
+    ctl_; (tap-hold-next-release 200 ; rctl)
+)
+
+
+(deflayer homerowmods
+    @ctl_a   @alt_s   @sft_d   @met_f   g   h   @met_j   @sft_k   @alt_l   @ctl_;
+)
+
+
+
+
+
