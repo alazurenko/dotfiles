@@ -1,6 +1,5 @@
 {
-  "files.trimTrailingWhitespace": true,
-  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code, CaskaydiaMono Nerd Font",
   "editor.fontWeight": "400",
   "editor.fontLigatures": true,
   "editor.fontSize": 18,
@@ -12,53 +11,19 @@
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "all",
   "editor.cursorBlinking": "solid",
-  "workbench.colorTheme": "Palenight Theme",
-  "workbench.sideBar.location": "right",
-  "explorer.confirmDelete": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "breadcrumbs.enabled": true,
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "vim.camelCaseMotion.enable": true,
   "editor.inlineSuggest.enabled": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "yaml": false,
-    "typescript": true,
-    "typescriptreact": true
-  },
-  "typescript.preferences.quoteStyle": "single",
-  "javascript.preferences.quoteStyle": "single",
   "editor.suggest.showStatusBar": true,
   "editor.guides.indentation": true,
   "editor.stickyScroll.enabled": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "github.copilot.editor.enableAutoCompletions": true,
-  "terminal.integrated.env.osx": {}
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "workbench.sideBar.location": "right",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "vim.camelCaseMotion.enable": true
 }
