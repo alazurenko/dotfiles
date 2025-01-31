@@ -3,7 +3,6 @@
 task=$(basename "$0")
 
 echo "[$task]: install"
-brew install ghostty
 brew install obsidian
 brew install raycast
 brew install flux
