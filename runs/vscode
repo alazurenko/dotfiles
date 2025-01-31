@@ -21,4 +21,4 @@ code --install-extension arcanis.vscode-zipfs
 
 echo "[$task]: setup config"
 # MacOS specific
-cp ./dotfiles/vscode.settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+cp ./config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json

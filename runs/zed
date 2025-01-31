@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+task=$(basename "$0")
+
+echo "[$task]: install"
+# brew install zed
+
+echo "[$task]: setup config"
+cp ./config/zed/keymap.json $HOME/.config/zed/keymap.json
+cp ./config/zed/settings.json $HOME/.config/zed/settings.json
+cp -r ./config/zed/snippets $HOME/.config/zed/
