@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-task=$(basename "$0")
-
-echo "[$task]: install"
 brew install ghostty
 
-echo "[$task]: setup configuration"
 cp ./config/ghostty/config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config

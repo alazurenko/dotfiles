@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-task=$(basename "$0")
-
-echo "[$task]: create folders"
 
 root="projects"
 scopes=("personal" "work")

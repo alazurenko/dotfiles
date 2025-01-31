@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-task=$(basename "$0")
-
-echo "[$task]: install"
 brew install fish
 brew install fisher
 

@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
-task=$(basename "$0")
-
-echo "[$task]: install"
 brew install visual-studio-code
 
-echo "[$task]: install extensions"
 code --install-extension aaron-bond.better-comments
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
@@ -19,6 +15,5 @@ code --install-extension catppuccin.catppuccin-vsc
 code --install-extension monish.regexsnippets
 code --install-extension arcanis.vscode-zipfs
 
-echo "[$task]: setup config"
 # MacOS specific
 cp ./config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
