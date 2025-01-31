@@ -14,6 +14,7 @@ code --install-extension yoavbls.pretty-ts-errors
 code --install-extension catppuccin.catppuccin-vsc
 code --install-extension monish.regexsnippets
 code --install-extension arcanis.vscode-zipfs
+code --install-extension tobias-z.vscode-harpoon
 
 # MacOS specific
 cp ./config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
