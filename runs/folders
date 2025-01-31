@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+task=$(basename "$0")
+
+echo "[$task]: create folders"
+
+root="projects"
+scopes=("personal" "work")
+
+for scope in "${scopes[@]}"; do
+    echo "[$task]: create '$scope' folder in $HOME/$root"
+    [ ! -d "$HOME/$root/$scope" ] && mkdir -p "$HOME/$root/$scope"
+done

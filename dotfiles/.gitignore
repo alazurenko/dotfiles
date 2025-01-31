@@ -1,0 +1,15 @@
+*~
+# os
+.DS_Store
+
+# tools
+.vscode/
+.zed/
+
+# npm
+node_modules/
+npm-debug.log
+
+# Build directories
+dist/
+build/

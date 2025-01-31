@@ -1,6 +1,8 @@
-[user]
-  name            = Andrii Lazurenko
-  email           = andrey.lazurenko@gmail.com
+[includeIf "gitdir:~/projects/personal/"]
+  path = ~/.gitconfig-personal
+
+[includeIf "gitdir:~/projects/work/"]
+  path = ~/.gitconfig-work
 
 [alias]
   s               = status

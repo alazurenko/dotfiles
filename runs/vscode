@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+task=$(basename "$0")
+
+echo "[$task]: install"
+brew install visual-studio-code
+
+echo "[$task]: install extensions"
+code --install-extension aaron-bond.better-comments
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension vscodevim.vim
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension Cardinal90.multi-cursor-case-preserve
+code --install-extension yoavbls.pretty-ts-errors
+code --install-extension catppuccin.catppuccin-vsc
+code --install-extension monish.regexsnippets
+code --install-extension arcanis.vscode-zipfs
+
+echo "[$task]: setup config"
+# MacOS specific
+cp ./dotfiles/vscode.settings.json $HOME/Library/Application\ Support/Code/User/settings.json

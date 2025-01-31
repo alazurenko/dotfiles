@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+task=$(basename "$0")
+
+# install
+echo "[$task]: install"
+brew install git
+git -v
+
+echo "[$task]: setup configuration"
+cp ./dotfiles/.gitconfig-personal $HOME/.gitconfig-personal
+cp ./dotfiles/.gitconfig-work $HOME/.gitconfig-work
+cp ./dotfiles/.gitconfig $HOME/.gitconfig
+echo "[$task]: config file: $HOME/.gitconfig"
+
+echo "[$task]: setup gitignore"
+cp ./dotfiles/.gitignore $HOME/.gitignore
+git config --global core.excludefiles $HOME/.gitignore
+echo -n "[$task]: ignore file: " && git config --global core.excludefiles
