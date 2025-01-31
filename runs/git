@@ -2,7 +2,6 @@
 
 task=$(basename "$0")
 
-# install
 echo "[$task]: install"
 brew install git
 git -v

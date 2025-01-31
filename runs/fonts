@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+task=$(basename "$0")
+
+echo "[$task]: install"
+brew install font-fira-code
+brew install font-jetbrains-mono-nerd-font

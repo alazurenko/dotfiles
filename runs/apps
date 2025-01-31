@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+task=$(basename "$0")
+
+echo "[$task]: install"
+brew install ghostty
+brew install obsidian
+brew install raycast
+brew install flux
+brew install karabiner-elements
+brew install maestral
+brew install docker
+brew install firefox
+brew install arc
+brew install zen-browser
+brew install bitwarden
+
+brew install balenaetcher
+brew install logi-options+
+brew install telegram
+brew install signal
+brew install yubico-yubikey-manager
