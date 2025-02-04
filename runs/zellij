@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
 brew install zellij
+
+cp ./config/zellij/config.kdl $HOME/.config/zellij/config.kdl
