@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Check for root privileges
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run with sudo"
+    exit 1
+fi
+
+mkdir -p $HOME/.config/kmonad
+
+curl -LO https://github.com/kmonad/kmonad/releases/download/0.4.1/kmonad-0.4.1-linux -o kmonad
+chmod +x kmonad
+mv kmonad /usr/local/bin
+
+# Verify kmonad installation
+if ! command -v kmonad >/dev/null; then
+    echo "KMonad installation failed"
+    exit 1
+fi
+
+cp ./config/kmonad/kmonad.service /etc/systemd/system/kmonad.service
+cp ./config/kmonad/config.kbd $HOME/.config/kmonad/config.kbd
+chmod 644 /etc/systemd/system/kmonad.service
+systemctl daemon-reload
+systemctl enable kmonad.service
+systemctl start kmonad.service
