@@ -10,7 +10,7 @@ fi
 
 mkdir -p $HOME/.config/kmonad
 
-curl -LO https://github.com/kmonad/kmonad/releases/download/0.4.1/kmonad-0.4.1-linux -o kmonad
+curl -L https://github.com/kmonad/kmonad/releases/download/0.4.1/kmonad-0.4.1-linux -o kmonad
 chmod +x kmonad
 mv kmonad /usr/local/bin
 
@@ -23,6 +23,28 @@ fi
 cp ./config/kmonad/kmonad.service /etc/systemd/system/kmonad.service
 cp ./config/kmonad/config.kbd $HOME/.config/kmonad/config.kbd
 chmod 644 /etc/systemd/system/kmonad.service
-systemctl daemon-reload
-systemctl enable kmonad.service
-systemctl start kmonad.service
+
+# Start systemd service
+if ! systemctl daemon-reload; then
+    echo "Failed to reload systemd daemon"
+    exit 1
+fi
+
+if ! systemctl enable kmonad.service; then
+    echo "Failed to enable kmonad service"
+    exit 1
+fi
+
+if ! systemctl start kmonad.service; then
+    echo "Failed to start kmonad service"
+    exit 1
+fi
+
+# Verify service is running
+if systemctl is-active --quiet kmonad.service; then
+    echo "KMonad service installed and running successfully"
+else
+    echo "KMonad service failed to start properly"
+    echo "Check status with: systemctl status kmonad.service"
+    exit 1
+fi

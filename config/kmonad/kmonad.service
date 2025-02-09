@@ -5,7 +5,9 @@ After=basic.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/kmonad $HOME/.config/kmonad/config.kbd
+ExecStart=/usr/local/bin/kmonad %h/.config/kmonad/config.kbd
+User=root
+Group=root
 Restart=always
 RestartSec=3
 Environment=DISPLAY=:0
