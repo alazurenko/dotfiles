@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Cron task for backup of notes.
+# crontab -e
+# */30 * * * * ~/path/to/sync-notes
+# crontab -l
+
+src_dir="$HOME/Dropbox/vault"
+dest_dir="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+
+if [ ! -d "${src_dir}" ]; then
+    echo "Source directory does not exist: ${src_dir}"
+    exit 1
+fi
+
+if [ ! -d "${dest_dir}" ]; then
+    echo "Destination directory does not exist: ${dest_dir}"
+    exit 1
+fi
+
+rsync -av --update --delete "$src_dir/" "$dest_dir/"
