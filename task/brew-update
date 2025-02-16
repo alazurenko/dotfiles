@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Cron task fos system updates.
+# crontab -e
+# 0 7 * * * ~/path/to/brew-update
+# crontab -l
+
+brew update
+brew upgrade
