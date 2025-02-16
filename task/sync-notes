@@ -5,17 +5,29 @@
 # */30 * * * * ~/path/to/sync-notes
 # crontab -l
 
+log_file="$HOME/sync-notes.log"
 src_dir="$HOME/Dropbox/vault"
 dest_dir="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
 
+log() {
+    echo "$(date): $1" >> "$log_file"
+}
+
+log "Starting sync..."
+
 if [ ! -d "${src_dir}" ]; then
-    echo "Source directory does not exist: ${src_dir}"
+    log "Source directory does not exist: ${src_dir}"
     exit 1
 fi
 
 if [ ! -d "${dest_dir}" ]; then
-    echo "Destination directory does not exist: ${dest_dir}"
+    log "Destination directory does not exist: ${dest_dir}"
     exit 1
 fi
 
-rsync -av --update --delete "$src_dir/" "$dest_dir/"
+if ! rsync -a --update --delete "$src_dir/" "$dest_dir/" >> "$log_file" 2>&1; then
+    log "Sync failed with error code $?"
+    exit 1
+fi
+
+log "Sync completed successfully"
