@@ -1,0 +1,35 @@
+# General Settings
+show-read-feeds no
+auto-reload no
+reload-threads 1
+max-items 50
+refresh-on-startup yes
+
+# Browser Settings
+browser "open -a 'Arc'"
+external-url-viewer "open -a 'Arc'"
+
+# Colors
+color listnormal white default
+color listfocus black cyan standout
+color listnormal_unread blue default bold
+color listfocus_unread blue cyan bold
+color info black white
+color article white default
+color background black default
+
+# Macros
+macro , open-in-browser
+
+# Highlighting
+highlight article "(^Title:.*)" blue default bold
+highlight article "https?://[^ ]+" green default
+highlight article "(^Feed:.*|^Author:.*)" cyan default
+highlight article "(^Link:.*|^Date:.*)" yellow default
+
+# Efficiency
+download-path "~/Downloads/newsboat/%n"
+cache-file "~/.newsboat/cache.db"
+confirm-exit no
+cleanup-on-quit yes
+scrolloff 5
