@@ -5,6 +5,7 @@ brew install tldr
 brew install xclip
 brew install jq
 brew install parallel
+brew install htop
 
 # brew install yarn
 # brew install node asdf
