@@ -1,0 +1,15 @@
+{
+  "description": "Caps Lock to Escape (tap) / Left Control (hold)",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "caps_lock",
+        "modifiers": { "optional": ["any"] }
+      },
+      "parameters": { "basic.to_if_alone_timeout_milliseconds": 100 },
+      "to": [{ "key_code": "left_control" }],
+      "to_if_alone": [{ "key_code": "escape" }],
+      "type": "basic"
+    }
+  ]
+}
