@@ -10,7 +10,6 @@ brew install arc
 brew install zen-browser
 brew install bitwarden
 brew install meetingbar
-brew install balenaetcher
 brew install logi-options+
 brew install telegram
 brew install signal
