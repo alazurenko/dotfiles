@@ -99,10 +99,14 @@ alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+# alt-h = 'focus left'
+# alt-j = 'focus down'
+# alt-k = 'focus up'
+# alt-l = 'focus right'
+alt-left = 'focus left'
+alt-down = 'focus down'
+alt-up = 'focus up'
+alt-right = 'focus right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 alt-shift-h = 'move left'
@@ -133,6 +137,7 @@ alt-f6 = 'workspace F6'
 alt-f7 = 'workspace F7'
 alt-f8 = 'workspace F8'
 alt-f9 = 'workspace F9'
+alt-0 = 'workspace 0'
 # alt-a = 'workspace A'
 # In your config, you can drop workspace bindings that you don't need
 # alt-b = 'workspace B'
