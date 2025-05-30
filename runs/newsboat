@@ -2,4 +2,8 @@
 
 brew install newsboat
 
+if [ ! -d "$HOME/.config/newsboat" ]; then
+    mkdir -p "$HOME/.config/newsboat"
+fi
+
 cp ./config/newsboat/config $HOME/.config/newsboat/config
