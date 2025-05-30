@@ -1,0 +1,4 @@
+to_if_alone_millesonds: 1000
+to_if_held_down_threshold_milliseconds: 200
+to_delayed_action_delay_milliseconds: 200
+simultaneous_threshold_milliseconds: 50
