@@ -6,8 +6,8 @@ max-items 50
 refresh-on-startup yes
 
 # Browser Settings
-browser "open -a 'Arc'"
-external-url-viewer "open -a 'Arc'"
+browser "open -a 'Zen'"
+external-url-viewer "open -a 'Zen'"
 
 # Colors
 color listnormal white default
