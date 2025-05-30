@@ -1,0 +1,38 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Youtube",
+	"behavior": "create",
+	"noteContentFormat": "# {{schema:name}}\n\n![{{schema:name}}]({{url}})",
+	"properties": [
+		{
+			"name": "created",
+			"value": "{{date}}",
+			"type": "date"
+		},
+		{
+			"name": "tags",
+			"value": "capture",
+			"type": "multitext"
+		},
+		{
+			"name": "author",
+			"value": "{{schema:author|wikilink}}",
+			"type": "multitext"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "text"
+		},
+		{
+			"name": "upload",
+			"value": "{{schema:uploadDate|date:\\\"YYYY-MM-DD\\\"}}",
+			"type": "text"
+		}
+	],
+	"triggers": [
+		"https://www.youtube.com/watch?v="
+	],
+	"noteNameFormat": "{{schema:name}}",
+	"path": "inbox/capture/2025/22"
+}
