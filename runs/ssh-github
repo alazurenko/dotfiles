@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+SSH_DIR="$HOME/.ssh"
+
+echo "Creating a new SSH key for GitHub..."
+read -p "Enter your email address: " EMAIL
+
+# Generate the key
+ssh-keygen -t ed25519 -C "$EMAIL" -f "$SSH_DIR/id_ed25519_github" -N ""
+
+# Display the public key
+echo "Your public key (copy this to GitHub):"
+cat "$SSH_DIR/id_ed25519_github.pub"
+echo "Add this key to your GitHub account at: https://github.com/settings/keys"
