@@ -2,4 +2,4 @@
 
 brew install ghostty
 
-cp ./config/ghostty/config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
+cp ../config/ghostty/config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
