@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Enable "Use F1, F2, etc. keys as standard function keys"
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
+echo "Function keys set to standard mode. Hold Fn key for special features (brightness, volume, etc.)."
+
+# Disable Command + Space for Spotlight Search
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "{ enabled = 0; value = { parameters = { 32, 49, 1048576 }; type = standard; }; }"
+echo "Command + Space hotkey for Spotlight has been disabled."
+
+# Restart the system process to apply changes
+killall cfprefsd
+killall Finder
