@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+SSH_DIR="$HOME/.ssh"
+
+if [ -d "$SSH_DIR" ]; then
+    echo "The .ssh directory already exists at $SSH_DIR"
+else
+    echo "Creating .ssh directory at $SSH_DIR"
+    mkdir -p "$SSH_DIR"
+    # Set proper permissions (read/write/execute only for the owner)
+    chmod 700 "$SSH_DIR"
+    echo "Created .ssh directory with proper permissions (700)"
+fi
