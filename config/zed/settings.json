@@ -1,14 +1,13 @@
 {
-  "show_inline_completions": false,
-  "assistant": {
+  "ui_font_features": {
+    "calt": 0
+  },
+  "show_edit_predictions": false,
+  "agent": {
+    "default_profile": "ask",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
-    },
-    "version": "2",
-    "provider": {
-      "name": "openai",
-      "default_model": "gpt-4"
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
     }
   },
   "autosave": "on_focus_change",
@@ -21,7 +20,13 @@
     "diagnostics": false,
     "metrics": false
   },
-  "format_on_save": "on",
+  "cursor_blink": false,
+  "indent_guides": {
+    "enabled": false,
+    "coloring": "indent_aware"
+  },
+  "wrap_guides": [90],
+  "format_on_save": "off",
   "vim_mode": true,
   "relative_line_numbers": true,
   "ui_font_size": 18,
