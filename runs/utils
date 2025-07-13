@@ -7,8 +7,10 @@ brew install jq
 brew install parallel
 brew install htop
 
+# rest
 brew install zoxide
 brew install fzf
+brew install ripgrep
 
 # brew install yarn
 # brew install node asdf
