@@ -11,6 +11,7 @@ brew install htop
 brew install zoxide
 brew install fzf
 brew install ripgrep
+brew install tree
 
 # brew install yarn
 # brew install node asdf

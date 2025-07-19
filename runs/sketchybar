@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# https://github.com/FelixKratz/SketchyBar
+brew tap FelixKratz/formulae
+brew install sketchybar
+brew install --cask font-hack-nerd-font
+
+mkdir -p ~/.config/sketchybar/plugins
+cp $(brew --prefix)/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
+cp -r $(brew --prefix)/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
