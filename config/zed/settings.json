@@ -20,6 +20,16 @@
     "diagnostics": false,
     "metrics": false
   },
+  "scrollbar": {
+    "show": "never"
+  },
+  "tab_bar": {
+    "show": false
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false
+  },
   "cursor_blink": false,
   "indent_guides": {
     "enabled": false,
