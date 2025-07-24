@@ -15,3 +15,4 @@ brew install telegram
 brew install signal
 brew install yubico-yubikey-manager
 brew install spotify
+brew install vlc
