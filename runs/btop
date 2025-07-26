@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+brew install btop
+
+cp ./config/btop/btop.conf $HOME/.config/btop/btop.conf
