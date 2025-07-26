@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+brew tap FelixKratz/formulae
+brew install borders
+
+cp ./config/junkyborders/bordersrc $HOME/.config/borders
