@@ -2,4 +2,4 @@
 
 brew install btop
 
-cp ./config/btop/btop.conf $HOME/.config/btop/btop.conf
+cp ./config/btop/btop.conf $HOME/.config/btop/
