@@ -5,10 +5,15 @@ brew install tldr
 brew install xclip
 brew install jq
 brew install parallel
+brew install bat
+brew install fd
+brew install ripgrep
+brew install fzf
+brew install tree
+brew install lazygit
 
 # rest
 brew install zoxide
-brew install fzf
-brew install ripgrep
-brew install tree
 brew install gh
+brew install the-unarchiver
+brew install ffmpeg
