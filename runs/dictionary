@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# https://jsomers.net/blog/dictionary
+#
+# Create dictionaries directory
+mkdir -p $HOME/Library/Dictionaries
+
+# Download Webster's 1913 Dictionary
+cd /tmp
+curl -L -o websters1913.zip "https://github.com/websterParser/WebsterParser/releases/latest/download/websters-1913.dictionary.zip"
+
+# Extract and install
+unzip websters1913.zip
+
+mv "Webster's Unabridged Dictionary (1913).dictionary" $HOME/Library/Dictionaries/
+
+# Clean up
+rm -rf websters1913.zip
+
+echo "Webster's 1913 Dictionary installed. Please restart Dictionary app and enable it in preferences."
