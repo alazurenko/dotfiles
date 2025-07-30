@@ -21,28 +21,34 @@
       "shift-n": "search::SelectPreviousMatch",
       "g b": "editor::ToggleComments",
       "+ +": "workspace::Save",
-      "space c": "pane::CloseActiveItem"
+			"space c": "pane::CloseActiveItem"
     }
   },
   {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "ctrl-k": "editor::ContextMenuPrevious",
-      "ctrl-j": "editor::ContextMenuNext"
-    }
-  },
-  {
-    "context": "vim_mode == insert",
-    "bindings": {
-      "ctrl-k": "editor::ContextMenuPrevious",
-      "ctrl-j": "editor::ContextMenuNext"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
-    "bindings": {
-      "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp"
-    }
-  }
+		"context": "vim_mode == insert",
+		"bindings": {
+			"ctrl-k": "editor::ContextMenuPrevious",
+			"ctrl-j": "editor::ContextMenuNext"
+		}
+	},
+	{
+	"context": "Workspace",
+		"bindings": {
+		  "ctrl-z": "workspace::ToggleZoom",
+			"ctrl-x": "tab_switcher::CloseSelectedItem",
+			"cmd-k": [
+				"projects::OpenRecent",
+				{
+					"create_new_window": false
+				}
+			]
+		}
+	},
+	{
+		"context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+		"bindings": {
+			"shift-j": "editor::MoveLineDown",
+			"shift-k": "editor::MoveLineUp"
+		}
+	}
 ]
