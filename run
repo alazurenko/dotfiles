@@ -33,7 +33,13 @@ execute() {
 log "$script_dir -- $filter"
 
 cd $script_dir
-scripts=$(find ./runs -maxdepth 1 -mindepth 1 -type f -perm -0111)
+
+# Always run brew first if it exists and no specific filter is provided
+if [[ -z "$filter" && -x "./runs/brew" ]]; then
+    execute ./runs/brew
+fi
+
+scripts=$(find ./runs -maxdepth 1 -mindepth 1 -type f -perm -0111 | grep -v "./runs/brew")
 
 for script in $scripts; do
     if echo "$script" | grep -qv "$filter"; then
