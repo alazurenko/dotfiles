@@ -1,3 +1,6 @@
+[includeIf "gitdir:~/workspace/github.com/"]
+  path = ~/.gitconfig-personal
+
 [includeIf "gitdir:~/projects/personal/"]
   path = ~/.gitconfig-personal
 
