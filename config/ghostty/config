@@ -1,5 +1,5 @@
 font-size = 22
 font-family = Fira Code
 font-thicken = true
-theme = catppuccin-macchiato
-cursor-blink = false
+theme = catppuccin macchiato
+cursor-style-blink = false
