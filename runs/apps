@@ -17,3 +17,5 @@ brew install yubico-yubikey-manager
 brew install spotify
 brew install vlc
 brew install adobe-acrobat-reader
+brew install opencode
+brew install claude-code
