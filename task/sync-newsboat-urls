@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# cron: 0 * * * * ~/projects/personal/dotfiles/task/sync-newsboat-urls
+
+SRC="$HOME/Dropbox/Apps/newsboat"
+DEST="$HOME/.config/newsboat"
+
+mkdir -p "$DEST"
+
+files=(urls)
+
+for f in "${files[@]}"; do
+    if cp "$SRC/$f" "$DEST/$f"; then
+        echo "Copied: $f"
+    else
+        echo "Failed: $f" >&2
+    fi
+done
+
+echo "Done -> $DEST"
