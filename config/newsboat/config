@@ -6,8 +6,8 @@ max-items 50
 refresh-on-startup yes
 
 # Browser Settings
-browser "open -a 'Zen'"
-external-url-viewer "open -a 'Zen'"
+browser "open -a 'Google Chrome'"
+external-url-viewer "urlscan"
 
 # Colors
 color listnormal white default
