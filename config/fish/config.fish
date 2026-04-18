@@ -1,7 +1,13 @@
-# GPG TTY for commit signing
+# Environment
 set -x GPG_TTY (tty)
 
-# Environment variables
-# set -x API_KEY "your-api-key"
+# PATH
+# fish_add_path ~/.local/bin
+
+# Local secrets
+# set -x OPENAI_API_KEY "your-api-key"
+if test -f ~/.config/fish/secrets.fish
+    source ~/.config/fish/secrets.fish
+end
 
 zoxide init --cmd cd fish | source
