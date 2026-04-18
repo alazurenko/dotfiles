@@ -2,6 +2,7 @@
 
 brew install zed
 
-cp ./config/zed/keymap.json $HOME/.config/zed/keymap.json
-cp ./config/zed/settings.json $HOME/.config/zed/settings.json
-cp -r ./config/zed/snippets $HOME/.config/zed/
+mkdir -p "$HOME/.config/zed"
+cp ./config/zed/keymap.json "$HOME/.config/zed/keymap.json"
+cp ./config/zed/settings.json "$HOME/.config/zed/settings.json"
+cp -r ./config/zed/snippets "$HOME/.config/zed/"
