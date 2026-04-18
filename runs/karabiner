@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+ASSETS_DIR="$HOME/.config/karabiner/assets/complex_modifications"
+
+mkdir -p "$ASSETS_DIR"
+
+cp ./config/karabiner-elements/caps.json "$ASSETS_DIR/caps.json"
+cp ./config/karabiner-elements/home-row-mods.json "$ASSETS_DIR/home-row-mods.json"
+
+echo "Karabiner complex modifications copied to $ASSETS_DIR"
+echo "Import them in Karabiner-Elements -> Complex Modifications."
+echo "Reference parameters: ./config/karabiner-elements/parameters.txt"
