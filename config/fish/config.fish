@@ -1,5 +1,12 @@
+set -g fish_greeting
+
 # Environment
 set -x GPG_TTY (tty)
+
+# Homebrew
+if test -x /opt/homebrew/bin/brew
+    eval (/opt/homebrew/bin/brew shellenv)
+end
 
 # PATH
 # fish_add_path ~/.local/bin
@@ -10,4 +17,6 @@ if test -f ~/.config/fish/secrets.fish
     source ~/.config/fish/secrets.fish
 end
 
-zoxide init --cmd cd fish | source
+if type -q zoxide
+    zoxide init --cmd cd fish | source
+end
