@@ -42,6 +42,11 @@ fi
 scripts=$(find ./runs -maxdepth 1 -mindepth 1 -type f -perm -0111 | grep -v "./runs/brew")
 
 for script in $scripts; do
+    if [[ -z "$filter" && "$script" == *.root ]]; then
+        log "skip root-only script: $script"
+        continue
+    fi
+
     if echo "$script" | grep -qv "$filter"; then
         log "skip: $script"
         continue

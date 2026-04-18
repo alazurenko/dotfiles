@@ -4,6 +4,8 @@ brew install fish
 brew install fisher
 brew install eza
 
+mkdir -p "$HOME/.config/fish"
+cp ./config/fish/config.fish "$HOME/.config/fish/config.fish"
 
 fish -c "fisher install IlanCosman/tide@v6"
 fish -c "fisher install jhillyerd/plugin-git"
