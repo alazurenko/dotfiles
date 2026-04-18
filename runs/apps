@@ -1,22 +1,40 @@
 #!/usr/bin/env bash
 
+# Browsers
+brew install google-chrome
+brew install zen-browser
+
+# Workspace and productivity
+brew install adobe-acrobat-reader
+brew install docker
+brew install flux
+brew install maestral
+brew install meetingbar
 brew install obsidian
 brew install raycast
-brew install flux
-brew install karabiner-elements
-brew install maestral
-brew install docker
-brew install zen-browser
-brew install google-chrome
+
+# Device, input, and security
 brew install bitwarden
-brew install meetingbar
+brew install karabiner-elements
 brew install logi-options+
-brew install telegram
-brew install signal
 brew install yubico-yubikey-manager
+
+# Media
 brew install spotify
 brew install vlc
-brew install adobe-acrobat-reader
-brew install opencode
-brew install claude-code
+
+# Communication
+brew install signal
+brew install telegram
 brew install zoom
+
+# AI tools
+brew install handy
+brew install claude-code
+brew install codex
+brew install codex-app
+brew install opencode
+brew install umputun/apps/ralphex
+
+# Terminal file manager
+brew install yazi
