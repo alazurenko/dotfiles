@@ -29,7 +29,7 @@ highlight article "(^Link:.*|^Date:.*)" yellow default
 
 # Efficiency
 download-path "~/Downloads/newsboat/%n"
-cache-file "~/.newsboat/cache.db"
+cache-file "~/.config/newsboat/cache.db"
 confirm-exit no
 cleanup-on-quit yes
 scrolloff 5

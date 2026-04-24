@@ -2,16 +2,16 @@
 
 brew install newsboat
 
-mkdir -p "$HOME/.newsboat"
+mkdir -p "$HOME/.config/newsboat"
 
 DROPBOX="$HOME/Dropbox/Apps/newsboat"
 
 if [ -d "$DROPBOX" ]; then
     files=(config urls summarize.conf newsboat-summarize)
     for f in "${files[@]}"; do
-        [ -f "$DROPBOX/$f" ] && cp "$DROPBOX/$f" "$HOME/.newsboat/$f" && echo "Restored: $f"
+        [ -f "$DROPBOX/$f" ] && cp "$DROPBOX/$f" "$HOME/.config/newsboat/$f" && echo "Restored: $f"
     done
 else
-    cp ./config/newsboat/config "$HOME/.newsboat/config"
+    cp ./config/newsboat/config "$HOME/.config/newsboat/config"
     echo "No Dropbox backup found, copied config from dotfiles"
 fi
