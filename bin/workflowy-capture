@@ -1,0 +1,105 @@
+#!/opt/homebrew/bin/python3
+
+import json
+import pathlib
+import re
+import subprocess
+import sys
+import urllib.error
+import urllib.request
+import tomllib
+
+CONFIG_PATH = pathlib.Path.home() / ".config" / "workflowy-capture.toml"
+API_URL = "https://workflowy.com/api/v1/nodes"
+
+
+def read_clipboard() -> str:
+    return subprocess.run(["pbpaste"], check=True, capture_output=True, text=True).stdout
+
+
+def normalize_markdown_link(text: str) -> str:
+    text = text.strip()
+    match = re.fullmatch(r"\[(.*)\]\(([^\s][^)]*)\)", text, re.DOTALL)
+    if not match:
+        return text
+
+    label = match.group(1).replace("[", "").replace("]", "").strip()
+    url = match.group(2).strip()
+    return f"[{label}]({url})"
+
+
+def load_config() -> tuple[str, str]:
+    if not CONFIG_PATH.exists():
+        raise SystemExit(f"Missing config: {CONFIG_PATH}")
+
+    with CONFIG_PATH.open("rb") as fh:
+        data = tomllib.load(fh)
+
+    api_key = data.get("api_key", "").strip()
+    parent_id = data.get("parent_id", "inbox").strip() or "inbox"
+
+    if not api_key:
+        raise SystemExit(f"Missing api_key in {CONFIG_PATH}")
+
+    return api_key, parent_id
+
+
+def create_node(api_key: str, parent_id: str, name: str) -> dict:
+    payload = json.dumps({
+        "parent_id": parent_id,
+        "name": name,
+        "position": "top",
+    }).encode()
+
+    request = urllib.request.Request(
+        API_URL,
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(request) as response:
+            return json.loads(response.read().decode())
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode(errors="replace")
+        raise SystemExit(f"Workflowy API error {exc.code}: {body}")
+
+
+def main() -> int:
+    args = sys.argv[1:]
+    print_only = False
+
+    if args and args[0] == "--print":
+        print_only = True
+        args = args[1:]
+
+    if args:
+        raw = " ".join(args)
+    elif not sys.stdin.isatty():
+        raw = sys.stdin.read()
+    else:
+        raw = read_clipboard()
+
+    normalized = normalize_markdown_link(raw)
+    if not normalized:
+        raise SystemExit("Clipboard is empty")
+
+    if print_only:
+        print(normalized)
+        return 0
+
+    api_key, parent_id = load_config()
+    result = create_node(api_key, parent_id, normalized)
+    if "item_id" in result:
+        print(result["item_id"])
+    else:
+        print(json.dumps(result))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

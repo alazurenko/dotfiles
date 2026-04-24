@@ -1,0 +1,7 @@
+# Get your API key from https://workflowy.com/api-key
+# Get your inbox node ID from the WorkFlowy URL when viewing that node
+#
+# Copy this file to ~/.config/workflowy-capture.toml and fill in your values.
+
+api_key = ""
+parent_id = "inbox"

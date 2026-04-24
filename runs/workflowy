@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+mkdir -p "$HOME/.local/bin"
+cp ./bin/workflowy-capture "$HOME/.local/bin/workflowy-capture"
+chmod +x "$HOME/.local/bin/workflowy-capture"
+
+if [ ! -f "$HOME/.config/workflowy-capture.toml" ]; then
+    cp ./config/workflowy-capture/workflowy-capture.toml.example "$HOME/.config/workflowy-capture.toml"
+    echo "Created ~/.config/workflowy-capture.toml — add your api_key and parent_id."
+fi
