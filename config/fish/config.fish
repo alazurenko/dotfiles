@@ -5,6 +5,9 @@ set -x GPG_TTY (tty)
 
 # Homebrew
 if test -x /opt/homebrew/bin/brew
+    # Keep `brew install` responsive; update Homebrew explicitly when desired.
+    set -x HOMEBREW_NO_AUTO_UPDATE 1
+    set -x HOMEBREW_NO_ENV_HINTS 1
     eval (/opt/homebrew/bin/brew shellenv)
 end
 

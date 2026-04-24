@@ -240,3 +240,71 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 # after-startup-command = ['exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0']
+
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty"
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = "dev.zed.Zed"
+run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
+if.app-id = "com.google.Chrome"
+if.window-title-regex-substring = "Home"
+run = "move-node-to-workspace F4"
+
+[[on-window-detected]]
+if.app-id = "com.google.Chrome"
+if.window-title-regex-substring = "Work"
+run = "move-node-to-workspace F3"
+
+[[on-window-detected]]
+if.app-id = "com.google.Chrome"
+if.window-title-regex-substring = "Andrii"
+run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
+if.app-id = "md.obsidian"
+run = "move-node-to-workspace 4"
+
+[[on-window-detected]]
+if.app-id = "com.culturedcode.ThingsMac"
+run = "move-node-to-workspace 5"
+
+[[on-window-detected]]
+if.app-id = "com.apple.iCal"
+run = "move-node-to-workspace 5"
+
+[[on-window-detected]]
+if.app-id = "com.spotify.client"
+run = "move-node-to-workspace 6"
+
+[[on-window-detected]]
+if.app-id = "com.anthropic.claudefordesktop"
+run = "move-node-to-workspace 7"
+
+[[on-window-detected]]
+if.app-id = "com.openai.codex"
+run = "move-node-to-workspace F7"
+
+[[on-window-detected]]
+if.app-id = "com.tinyspeck.slackmacgap"
+run = "move-node-to-workspace 8"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.teams2"
+run = "move-node-to-workspace F8"
+
+[[on-window-detected]]
+if.app-id = "com.apple.mail"
+run = "move-node-to-workspace 9"
+
+[[on-window-detected]]
+if.app-id = "ru.keepcoder.Telegram"
+run = "move-node-to-workspace F9"
+
+# [[on-window-detected]]
+# if.app-id = ""
+# run = "move-node-to-workspace "
