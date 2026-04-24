@@ -1,10 +1,9 @@
 function ws --description "Open a configured Zellij workspace"
-    if test (count $argv) -lt 1
-        echo "Usage: ws <workspace-name>"
-        return 1
-    end
-
     set -l workspace_name $argv[1]
+    if test -z "$workspace_name"
+        set workspace_name (wsl | fzf --prompt="workspace: ")
+        or return 0
+    end
     set -l config_path "$HOME/.config/workspaces.toml"
     set -l layout_name "__workspace_$workspace_name"
     set -l layout_path "$HOME/.config/zellij/layouts/$layout_name.kdl"
