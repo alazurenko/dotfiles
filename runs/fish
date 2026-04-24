@@ -6,8 +6,10 @@ brew install eza
 
 mkdir -p "$HOME/.config/fish"
 mkdir -p "$HOME/.config/fish/functions"
+mkdir -p "$HOME/.config/fish/completions"
 cp ./config/fish/config.fish "$HOME/.config/fish/config.fish"
 cp -R ./config/fish/functions/. "$HOME/.config/fish/functions/"
+cp -R ./config/fish/completions/. "$HOME/.config/fish/completions/"
 
 if [ ! -f "$HOME/.config/fish/secrets.fish" ]; then
     cp ./config/fish/secrets.fish.example "$HOME/.config/fish/secrets.fish"

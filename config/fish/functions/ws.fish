@@ -20,9 +20,6 @@ function ws --description "Open a configured Zellij workspace"
         return 1
     end
 
-    python3 $renderer $workspace_name $config_path $layout_path
-    or return 1
-
     set -l session_name (python3 -c '
 import pathlib
 import sys
@@ -39,7 +36,18 @@ print(workspace.get("session", workspace_name))
     )
     or return 1
 
-    zellij delete-session $session_name >/dev/null 2>&1
-    zellij kill-session $session_name >/dev/null 2>&1
+    set -l sessions (zellij list-sessions 2>/dev/null | string replace -ra '\e\[[0-9;]*m' '')
+    if string match -qr "^$session_name\\b" $sessions
+        if string match -qr "^$session_name\\b.*EXITED" $sessions
+            zellij delete-session $session_name >/dev/null 2>&1
+        else
+            zellij attach $session_name
+            return
+        end
+    end
+
+    python3 $renderer $workspace_name $config_path $layout_path
+    or return 1
+
     zellij --session $session_name --new-session-with-layout $layout_name
 end
