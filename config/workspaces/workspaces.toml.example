@@ -1,0 +1,29 @@
+# Local Zellij workspace definitions consumed by `ws <name>`.
+# Copy this file to ~/.config/workspaces.toml and edit it locally.
+#
+# Each workspace can define:
+# - session: the Zellij session name to recreate
+# - tabs: ordered tabs to create
+#
+# Each tab needs:
+# - name: the tab label in Zellij
+# - cwd: the directory that tab should open in
+#
+# Usage:
+# - ws <workspace-name>
+# - or create a tiny Fish wrapper that calls `ws <workspace-name>`
+
+[workspaces.example]
+session = "example"
+
+[[workspaces.example.tabs]]
+name = "home"
+cwd = "/Users/your-user"
+
+[[workspaces.example.tabs]]
+name = "root"
+cwd = "/path/to/project"
+
+[[workspaces.example.tabs]]
+name = "run"
+cwd = "/path/to/project"

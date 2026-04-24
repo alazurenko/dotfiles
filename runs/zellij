@@ -2,8 +2,14 @@
 
 brew install zellij
 
-if [ ! -d "$HOME/.config/zellij" ]; then
-    mkdir -p "$HOME/.config/zellij"
-fi
+mkdir -p "$HOME/.config/zellij"
+mkdir -p "$HOME/.config/zellij/scripts"
 
-cp ./config/zellij/config.kdl $HOME/.config/zellij/config.kdl
+cp ./config/zellij/config.kdl "$HOME/.config/zellij/config.kdl"
+cp -R ./config/zellij/scripts/. "$HOME/.config/zellij/scripts/"
+
+chmod +x "$HOME/.config/zellij/scripts/"*.py
+
+if [ ! -f "$HOME/.config/workspaces.toml" ]; then
+    cp ./config/workspaces/workspaces.toml.example "$HOME/.config/workspaces.toml"
+fi
