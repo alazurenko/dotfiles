@@ -19,3 +19,5 @@ brew install gh
 brew install the-unarchiver
 brew install ffmpeg
 brew install pass
+brew install chafa
+brew install sevenzip

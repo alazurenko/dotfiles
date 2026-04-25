@@ -2,6 +2,8 @@ set -g fish_greeting
 
 # Environment
 set -x GPG_TTY (tty)
+set -x EDITOR zed
+set -x VISUAL zed
 
 # Homebrew
 if test -x /opt/homebrew/bin/brew
