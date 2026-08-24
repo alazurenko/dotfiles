@@ -5,9 +5,8 @@ brew install google-chrome
 brew install zen-browser
 
 # Workspace and productivity
-brew install adobe-acrobat-reader
 brew install docker
-brew install flux
+brew install flux-app
 brew install maestral
 brew install meetingbar
 brew install obsidian
